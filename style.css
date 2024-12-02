@@ -68,6 +68,10 @@
     height: 80vh;
 }
 
+.height_60vh{
+    height: 60vh;
+}
+
 .height_30vh_large{
     height: 30vh;
 }
@@ -256,6 +260,49 @@
     place-items: center;
 }
 
+.store-owner{
+    background: url(./img/testimonials-bg.jpg);
+}
+
+.store-owner-container img{
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.store-owner-container .name{
+     font-weight: bolder;
+     color: white;
+     margin-bottom: 0;
+}
+
+.store-owner-container .identity{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.792);
+    margin-bottom: 0;
+}
+.first-dot,.sec-dot,.third-dot,.forth-dot,.fifth-dot{
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+.first-dot,.sec-dot,.forth-dot,.fifth-dot{
+    background-color: rgba(0, 0, 0, 0.338);
+}
+
+.third-dot{
+    background-color: white;
+}
+
+.about-owner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+}
 /* small */
 @media only screen and (max-width:767px){
     .banner{
