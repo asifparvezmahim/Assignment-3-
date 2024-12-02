@@ -111,6 +111,9 @@
     max-height: 500px; 
 }
 
+.font-size10px{
+    font-size: 10px;
+}
 .font-size35px{
     font-size: 35px;
 }
@@ -303,6 +306,54 @@
     justify-content: center;
     height: 55vh;
 }
+
+.team-member-image img{
+    height: 300px;
+    width: 300px;
+}
+
+.member-info {
+    height: 70px;
+    width: 260px;
+    margin-left: 20px;
+    top: 0;
+    transform: translateY(-50%);
+    border: 1px solid white;
+    background-color: white;
+    padding: 10px;
+}
+
+.member-name {
+    margin-bottom: 5px; /* Reduce space below the name */
+}
+
+hr.w-25 {
+    margin-top: 0; /* Remove space above the line */
+    margin-bottom: 0; /* Remove space below the line */
+    width: 25%; /* Keeps the width consistent */
+    border: 1px solid black; /* Adjust line thickness if needed */
+}
+
+.icon a img{
+    height: 15px;
+    width: 15px;
+}
+
+.icons{
+    display: flex;
+    gap: 5px;
+}
+
+.designation_social-media{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-members{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
 /* small */
 @media only screen and (max-width:767px){
     .banner{
@@ -394,6 +445,15 @@
         grid-template-columns: repeat(1,1fr);
     }
 
+    .some-about-owner{
+       margin-left: 30px;
+    }
+
+    .team-members{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 2%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width:1200px){
@@ -436,5 +496,11 @@
 
     .gallery-image{
         grid-template-columns: repeat(3,1fr);
+    }
+
+    .team-members{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10%;
     }
 }
