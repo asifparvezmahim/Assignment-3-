@@ -38,6 +38,9 @@
     margin-top: 100px;
 }
 
+.margine-top-100-px{
+    margin-top: 100px;
+}
 .padding-top-100-px{
     padding-top: 50px;
 }
@@ -241,6 +244,18 @@
 .fs-hr2{
     display: none;
 }
+
+.gallery-image .image img{
+    width: 220px;
+}
+
+.gallery-image{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    place-items: center;
+}
+
 /* small */
 @media only screen and (max-width:767px){
     .banner{
@@ -328,6 +343,10 @@
         width: 300px;
     }
 
+    .gallery-image{
+        grid-template-columns: repeat(1,1fr);
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width:1200px){
@@ -366,5 +385,9 @@
 
     .fs-hr, .fs-hr2{
         display: none;
+    }
+
+    .gallery-image{
+        grid-template-columns: repeat(3,1fr);
     }
 }
