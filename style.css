@@ -10,6 +10,9 @@
 .margine-left-16px{
     margin-left: 16px;
 }
+.padding-left-16px{
+    padding-left: 16px;
+}
 
 .margine-right-16px{
     margin-right: 16px;
@@ -18,10 +21,6 @@
 .margine-top-10-percent{
   margin-top: 10%;
 }
-/* 
-.margine-top-10_percent{
-    margin-top: 10%;
-} */
 
 .margine-top-50-px{
     margin-top: 50px;
@@ -42,6 +41,14 @@
 .padding-top-100-px{
     padding-top: 50px;
 }
+.padding-top-50-px{
+    padding-top: 50px;
+}
+
+.padding-bottom-30-px{
+    padding-bottom: 50px;
+}
+
 .bg-navy{
     background: navy;
 }
@@ -58,10 +65,43 @@
     height: 80vh;
 }
 
+.height_30vh_large{
+    height: 30vh;
+}
+.position-of-fs-explaination{
+    display: flex;
+    align-items: center;
+}
+.bg-wheat{
+    background-color: wheat;
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.area{
+    height: 150px;
+    width: 300px;
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 35px;
+    margin-left: 10%;
+}
+
+.area-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
 
 .custom-image {
-    max-height: 500px; /* Set a max height */
-    object-fit: cover; /* Ensures proper cropping if needed */
+    max-height: 500px; 
+    object-fit: cover; 
+}
+
+.custom-details-image {
+    max-height: 500px; 
 }
 
 .font-size35px{
@@ -107,6 +147,9 @@
     margin: 25px;
 }
 
+.custom-shadow{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 .about_us{
    display: flex;
    justify-content: space-around;
@@ -149,8 +192,73 @@
     height: 50px;
     width: 50px;
 }
+
+.area-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.area img{
+    height: 40px;
+    width: 40px;
+    top: 0;
+    margin-left: 40%;
+    transform: translateY(-42%);
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.title-bar {
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Vertically centers the text and line */
+    padding-left: 16px;
+}
+
+.title-bar small {
+    font-size: 14px; /* Adjust the text size */
+    margin-right: 10px; /* Space between the text and the line */
+}
+
+.title-bar::after {
+    content: "";
+    width: 1in;; /* Makes the line take up remaining space */
+    height: 1px; /* Line thickness */
+    background-color: rgb(4, 249, 4); /* Line color */
+}
+
+
+.flex{
+    display: flex;
+    gap: 200px;
+    justify-content: space-evenly;
+}
+
+.fs-hr{
+    display: none;
+}
+.fs-hr2{
+    display: none;
+}
 /* small */
 @media only screen and (max-width:767px){
+    .banner{
+        /* justify-content: space-around; */
+        flex-direction: column-reverse;
+    }
+    
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-align-sm{
+        text-align: center;
+    }
+    .height_160vh{
+        height: 105vh;
+    }
     .title, .read_me_button,.about_us_button{
         margin-left: 25%;
     }
@@ -169,23 +277,94 @@
 
     .box_container{
         grid-template-columns: repeat(1,1fr);
-        margin-left:25%
+        margin-left:10px;
     }
+
+    .area{
+        margin-left: 10px;
+
+    }
+
+    .area-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+
+    .box_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .height_120vh_sm{
+        height: 120vh;
+    }
+
+    .flex{
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .fs-hr{
+        display: block;          /* Makes sure the <hr> is treated as a block element */
+        width: 60%;              /* Sets the width of the line */
+        margin-left: auto;
+        margin-right: auto; /* Centers the line horizontally */
+        background-color: black;  /* Changes the line's color */
+        height: 4px;             /* Sets the thickness of the line */
+        border: 0;   
+    }
+
+    .fs-hr2{
+        display: block;          /* Makes sure the <hr> is treated as a block element */
+        width: 60%;              /* Sets the width of the line */
+        margin-left: auto;
+        margin-right: auto; /* Centers the line horizontally */
+        background-color: black;  /* Changes the line's color */
+        height: 4px;             /* Sets the thickness of the line */
+        border: 0;   
+    }
+
+    .image-1,.image-2,.image-3,.image-4{
+        width: 300px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width:1200px){
     .about_us{
         display: flex;
-        /* justify-content: space-evenly; */
         flex-direction: column;
+    }
+    
+    .box_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 8px;
+        margin-left: 2%;
     }
 
     .first_row, .second_row{
         margin-left: 8%;
     }
 
-    .box_container{
+    .area-container{
         grid-template-columns: repeat(2,1fr);
-        margin-left:5%
+        margin-left:5%;
+    }
+
+    .height_60vh_md{
+        height: 60vh;
+    }
+
+    .flex{
+        gap: 20px;
+    }
+
+    .fs-hr{
+        display: block;
+    }
+
+    .fs-hr, .fs-hr2{
+        display: none;
     }
 }
