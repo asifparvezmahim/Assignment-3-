@@ -488,6 +488,68 @@ hr.w-25 {
     display: flex; /* Enable Flexbox for vertical centering */
     align-items: center; /* Center child container vertically */
 }
+
+.address-icon i, .phones-icon i,.email-icon i{
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  padding: 8px 7px;
+  border-radius: 50px;
+  color: rgb(29, 187, 84);
+  background-color: rgb(197, 237, 211);
+}
+
+.add-title {
+    margin-bottom: 4px; /* Reduce space below the first <p> */
+}
+
+.add-title + p {
+    margin-top: 0; /* Remove space above the second <p> */
+    margin-bottom: 0; /* Optional: Remove additional space below if needed */
+    line-height: 1.2; /* Optional: Adjust line height for closer spacing */
+}
+
+.address, .phone, .email{
+    display: flex;
+    gap: 8px;
+}
+
+.custom-form{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.subject-box{
+    margin-top: 10px;
+}
+
+.msg-box{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+}
+
+.sent-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sent-button button{
+   margin-top: 20px;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 20px;
+   background-color: rgb(29, 187, 84);
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* small */
 @media only screen and (max-width:767px){
     .banner{
@@ -627,6 +689,14 @@ hr.w-25 {
             border: 1px solid white;
             background-color: white;
         }
+
+        .contact-container{
+            flex-direction: column;
+        }
+
+        .contact-info{
+             margin-bottom: 20px;
+        }
 }
 
 @media only screen and (min-width: 768px) and (max-width:1200px){
@@ -708,5 +778,10 @@ hr.w-25 {
         height: 130px;
         border: 1px solid white;
         background-color: white;
+    }
+
+    .email-section{
+        width: 90%;
+        margin-right: 10px;
     }
 }
