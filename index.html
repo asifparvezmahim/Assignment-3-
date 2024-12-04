@@ -13,8 +13,10 @@
 </head>
 
 <body>
-      <!-- nav section -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-navy mx-3 mt-3 ">
+      <!-- banner and nav -->
+      <div class="nav_banner_section mx-3">
+        <!-- nav section -->
+      <nav class="navbar navbar-expand-lg navbar-dark mx-3 mt-3 ">
         <div class="container">
           <a class="navbar-brand" href="#">Bootslander</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,19 +25,31 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto text-white">
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link text-light" href="#about">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link text-light" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link text-light" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blogs">Blogs</a>
+                <a class="nav-link text-light" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link text-light" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle text-light" href="#team">Dropdown</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#contact">Contact</a>
               </li>
             </ul>  
           </div>
@@ -43,7 +57,7 @@
       </nav>
       
       <!-- banner section -->
-      <section class="banner_section margine-left-16px margine-right-16px bg-navy height_105vh">
+      <section class="banner_section margine-left-16px margine-right-16px  height_105vh" >
         <div class="banner text-light">
            <div class="description margine-top-10-percent">
                  <p class="font-size35px text-align-sm"><span class="fw-light">Build Your Landing Page <br> With</span> <span class="font-weight-bolder highlighted ">Bootslander</span></p>
@@ -64,9 +78,12 @@
            </div>
         </div>
       </section>
+      
+      </div>
+      
 
       <!-- about us section -->
-      <section class="about_us_section margine-top-20-px margine-left-16px margine-right-16px padding-bottom-30-px">
+      <section class="about_us_section margine-top-20-px margine-left-16px margine-right-16px padding-bottom-30-px" id="about">
         <div class="about_us">
           <div class="our_working_types">
             <div class="margine-top-10-px">
@@ -79,7 +96,8 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rerum mollitia quia <br> laboriosam, quasi assumenda obcaecati soluta iure reiciendis deserunt recusabo? <br> Iusto vel tempora, natus sequi explicabo quo consequuntur maiores omnis incidunt <br> excepturi fugiat obcaecati.</p>
             </div>
             <div class="read_me_button">
-              <div class="btn btn-danger">Read More</div>
+              <div class="btn btn-danger">Read More <i class="fas fa-arrow-right pt-1"></i>
+              </div>
             </div>
           </div>
           <div class="our_works">
@@ -240,7 +258,7 @@
       </section>
 
       <!-- features section -->
-      <section class="features margine-left-16px margine-right-16px">
+      <section class="features margine-left-16px margine-right-16px" id="features">
          <div class="about_features height_30vh_large height_60vh_md height_120vh_sm bg-wheat ">
             <div class="area-container">
                 <div class="area">
@@ -323,7 +341,7 @@
       </section>
 
       <!-- gallery section -->
-       <section class="gallery margine-left-16px">
+       <section class="gallery margine-left-16px" id="gallery">
           <div class="gallery-container margine-top-100-px">
             <div class="title-bar ">
               <small class="text-secondary">GALLERY</small>
@@ -385,7 +403,7 @@
        </section>
 
        <!-- Team section -->
-        <section class="padding-top-100-px">
+        <section class="padding-top-100-px" id="team">
           <div class="team-section">
             <div class="team-container margine-top-100-px">
               <div class="title-bar ">
@@ -487,7 +505,7 @@
         </section>
 
         <!-- Pricing section -->
-         <section class="price-section">
+         <section class="price-section" id="pricing">
               <div class="pricing-section">
                 <div class="pricing-container margine-top-100-px">
                   <div class="title-bar ">
@@ -529,7 +547,7 @@
 
                 <div class="price shadow-lg">
                   <div class="btn-parent d-flex justify-content-end">
-                    <button>Popular</button>
+                    <button class="mt-2 mx-2">Popular</button>
                   </div>
                   <div class="plan-title">
                     <p class="text-navy fw-bold fs-6 pt-3 margine-left-10px">BUSINESS PLAN</p>
@@ -583,7 +601,7 @@
 
 
         <!-- FAQ section -->
-         <section class="FAQ-section background-light-blue margine-top-100-px mb-5 padding-left-16px">
+         <section class="FAQ-section background-light-blue margine-top-100-px mb-5 padding-left-16px" id="faq">
             <div class="FAQ-container">
                <div class="FAQ">
                   <p class="font-size35px text-navy"><span>FREQUENTLY ASKED</span> <span class="fw-bold">QUESTION</span></p>
@@ -621,7 +639,7 @@
          </section>
 
          <!-- Contact Us section -->
-          <section class="mb-5">
+          <section class="mb-5" id="contact">
              <div class="contact-us">
               <div class="contact-title margine-top-100-px">
                 <div class="title-bar ">
@@ -683,7 +701,61 @@
              </div>
           </section>
 
-        
+        <!-- footer section-->
+         <footer>
+            <div class="top-section">
+              <div class="address-col">
+                <p class="fs-3 fw-bold text-light">Bootslander</p>
+                <p class="footer-address text-light">A1B Adam Street, <br> New York NY 53022</p>
+                <p class="text-light">
+                  <span class="fw-bold">Phone:</span> +1 5058 982 <br> 
+                  <span class="fw-bold">E-Mail:</span> info@bootsterland.com
+                </p>
+  
+                <div class="footer-address-logo">
+                  <img src="./img/facebook.png" alt="" srcset="" class="fb-img">
+                  <img src="./img/linkedin.png" alt="" srcset="" class="lkdn-img">
+                  <img src="./img/instagram.png" alt="" srcset="" class="ins-img">
+                </div>             
+              </div>
+  
+              <div class="link-col">
+                <p class="fs-5 fw-bold text-light">Useful Links</p>
+                <div class="links">
+                  <a href="">Home</a>
+                  <a href="">About Us</a>
+                  <a href="">Services</a>
+                  <a href="">Term of Service</a>
+                  <a href="">Private Policy</a>
+                </div>
+              </div>
+              <div class="link-col">
+                <p class="fs-5 fw-bold text-light">Our Services</p>
+                <div class="footer-servicse text-light">
+                  <p>Web Design</p>
+                  <p>Web Development</p>
+                  <p>Product Manager</p>
+                  <p>Marketing</p>
+                  <p>Graphic Design</p>
+                </div>
+              </div>
+              <div class="link-col">
+                <p class="fs-5 fw-bold text-light">Our Newsletter</p>
+                <p class="mt-2 text-light">Subscribe to Our Newsletter and Get Latest News about our products and services !</p>
+                <div class="input-section">
+                  <input type="text">
+                  <button class="">Subscrube</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-bottom pb-5">
+              <div class="notice">
+                <p class="copyright">Copyright <span class="fw-bold">Bootslander</span> All Rights Reserves</p>
+                <p class="developer">Designed By <span class="dev-company">BootstrapMade</span></p>
+              </div>
+            </div>
+         </footer>
 
    <script src="./Bootstrap Files/js/bootstrap.bundle.js"></script>
 </body>
